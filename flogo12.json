@@ -1,0 +1,127 @@
+{
+	"name": "mashery",
+	"type": "flogo:app",
+	"version": "1.0.0",
+	"description": "This is the first microgateway app",
+	"properties": null,
+	"triggers": [
+		{
+			"name": "rest_trigger31",
+			"id": "rest_trigger31",
+			"ref": "github.com/rameshpolishetti/triggerhttpnew",
+			"settings": {
+				"port": "9096"
+			},
+			"outputs": null,
+			"handlers": [
+				{
+					"actionId": "get_pet_success_handler31",
+					"settings": {
+						"autoIdReply": "false",
+						"method": "GET",
+						"path": "/users",
+						"useReplyHandler": "false"
+					},
+					"outputs": null
+				}
+			],
+			"endpoints": null
+		}
+	],
+	"actions": [
+		{
+			"id": "get_pet_success_handler31",
+			"ref": "github.com/TIBCOSoftware/flogo-contrib/action/flow",
+			"data": {
+				"flow": {
+					"type": 1,
+					"attributes": [],
+					"rootTask": {
+						"id": 1,
+						"type": 1,
+						"tasks": [
+							{
+								"id": 2,
+								"name": "Invoke REST Service",
+								"description": "Simple REST Activity",
+								"type": 1,
+								"activityType": "tibco-rest",
+								"activityRef": "github.com/TIBCOSoftware/flogo-contrib/activity/rest",
+								"attributes": [
+									{
+										"name": "method",
+										"value": "GET",
+										"required": true,
+										"type": "string"
+									},
+									{
+										"name": "uri",
+										"value": "http://10.97.94.22:8000/",
+										"required": true,
+										"type": "string"
+									},
+									{
+										"name": "pathParams",
+										"value": null,
+										"required": false,
+										"type": "params"
+									},
+									{
+										"name": "queryParams",
+										"value": null,
+										"required": false,
+										"type": "params"
+									},
+									{
+										"name": "content",
+										"value": null,
+										"required": false,
+										"type": "any"
+									}
+								]
+							},
+							{
+								"id": 3,
+								"name": "Reply To Trigger",
+								"description": "Simple Reply Activity",
+                                "type": 1,
+                                "activityType": "tibco-reply",
+                                "activityRef": "github.com/TIBCOSoftware/flogo-contrib/activity/reply",
+                                "attributes": [
+                                    {
+                                        "name": "code",
+                                        "value": 200,
+                                        "required": true,
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "data",
+                                        "value": null,
+                                        "required": true,
+                                        "type": "any"
+                                    }
+                                ],
+                                "inputMappings": [
+                                    {
+                                        "type": 1,
+                                        "value": "{A2.result}",
+                                        "mapTo": "data"
+                                    }
+                                ]
+							}
+						],
+						"links": [
+							{
+								"id": 1,
+								"from": 2,
+								"to": 3,
+								"type": 0
+							}
+						],
+						"attributes": []
+					}
+				}
+			}
+		}
+	]
+}
