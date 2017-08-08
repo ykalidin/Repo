@@ -57,7 +57,7 @@
 									},
 									{
 										"name": "uri",
-										"value": "http://10.97.94.22:8000/",
+										"value": "http://10.97.94.35:8000/",
 										"required": true,
 										"type": "string"
 									},
