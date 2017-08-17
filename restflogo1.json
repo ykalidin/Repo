@@ -101,7 +101,7 @@
                                 "inputMappings": [
                                     {
                                         "type": 1,
-                                        "value": "{T.pathParams}.id",
+                                        "value": "{A2.result}",
                                         "mapTo": "data"
                                     }
                                 ]
