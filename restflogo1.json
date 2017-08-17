@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "uri",
-                                        "value": "http://petstore.swagger.io/v2/pet/54",
+                                        "value": "http://localhost/",
                                         "required": true,
                                         "type": "string"
                                     },
