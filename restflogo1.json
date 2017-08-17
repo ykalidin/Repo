@@ -101,7 +101,7 @@
                                 "inputMappings": [
                                     {
                                         "type": 1,
-                                        "value": "{A2.result}",
+                                        "value": "{A2.Result}",
                                         "mapTo": "data"
                                     }
                                 ]
