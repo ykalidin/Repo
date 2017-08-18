@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "uri",
-                                        "value": "http://localhost/",
+                                        "value": "http://localhost:8000/",
                                         "required": true,
                                         "type": "string"
                                     },
