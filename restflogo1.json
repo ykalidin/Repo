@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "uri",
-                                        "value": "http://petstore.swagger.io/v2/pet/1",
+                                        "value": "http://petstore.swagger.io/v2/pet/12",
                                         "required": true,
                                         "type": "string"
                                     },
