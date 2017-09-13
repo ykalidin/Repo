@@ -1,0 +1,84 @@
+{
+    "name": "hello",
+    "type": "flogo:app",
+    "version": "0.0.1",
+    "description": "",
+    "triggers": [
+        {
+            "name": "Receive HTTP Message",
+            "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/rest",
+            "description": "Simple REST Trigger",
+            "settings": {
+                "port": "9096"
+            },
+            "id": "receive_http_message",
+            "handlers": [
+                {
+                    "settings": {
+                        "method": "GET",
+                        "path": "/pets",
+                        "autoIdReply": null,
+                        "useReplyHandler": null
+                    },
+                    "actionId": "app"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "app",
+            "data": {
+                "flow": {
+                    "type": 1,
+                    "explicitReply": true,
+                    "attributes": [],
+                    "rootTask": {
+                        "id": 1,
+                        "type": 1,
+                        "tasks": [
+                            {
+                                "id": 2,
+                                "name": "tibco-kafkapub",
+                                "description": "Publish a message to a kafka topic",
+                                "type": 1,
+                                "activityType": "tibco-kafkapub",
+                                "activityRef": "github.com/TIBCOSoftware/flogo-contrib/activity/kafkapub",
+                                "attributes": [
+                                    {
+                                        "name": "BrokerUrls",
+                                        "value": "localhost:9092",
+                                        "required": true,
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "Topic",
+                                        "value": "syslog",
+                                        "required": true,
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "Message",
+                                        "value": "mary had a little lamb",
+                                        "required": true,
+                                        "type": "string"
+                                    },
+                                    {
+                                         "name": "truststore",
+                                        "value": "/kafka_2.11-0.10.2.0/keys/trust",
+                                        "required": true,
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        ],
+                        "links": [],
+                        "attributes": []
+                    }
+                }
+            },
+            "id": "app",
+            "ref": "github.com/TIBCOSoftware/flogo-contrib/action/flow"
+        }
+    ]
+}
