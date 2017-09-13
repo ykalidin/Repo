@@ -65,7 +65,7 @@
                                     },
                                     {
                                          "name": "truststore",
-                                        "value": "C:/Users/ykalidin/Downloads/kafka_2.12-0.10.2.1/kafka_2.11-0.10.2.0/keys/trust",
+                                        "value": "opt/kafka_2.12-0.10.2.1/kafka_2.11-0.10.2.0/keys/trust",
                                         "required": true,
                                         "type": "string"
                                     }
