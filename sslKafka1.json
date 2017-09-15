@@ -47,7 +47,7 @@
                                 "attributes": [
                                     {
                                         "name": "BrokerUrls",
-                                        "value": "localhost:9093",
+                                        "value": "10.97.90.55:9093",
                                         "required": true,
                                         "type": "string"
                                     },
@@ -65,17 +65,12 @@
                                     },{
       "name": "user",
       "type": "string",
-      "required": "localhost"
+      "required": "10.97.90.55"
     },
     {
       "name": "password",
       "type": "string",
       "required": "test1234"
-    },
-    {
-      "name": "truststore",
-      "type": "string",
-      "required": "C:/Users/ykalidin/Desktop/ssl2"
     }
                                 ]
                             }
