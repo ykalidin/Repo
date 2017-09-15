@@ -75,7 +75,7 @@
     {
       "name": "truststore",
       "type": "string",
-      "required": "/home/apps/Desktop/ssl/trust"
+      "required": "C:/Users/ykalidin/Desktop/ssl2"
     }
                                 ]
                             }
