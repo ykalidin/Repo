@@ -47,7 +47,7 @@
                                 "attributes": [
                                     {
                                         "name": "BrokerUrls",
-                                        "value": "10.97.90.55:9093",
+                                        "value": "localhost:9093",
                                         "required": true,
                                         "type": "string"
                                     },
@@ -65,7 +65,7 @@
                                     },{
       "name": "user",
       "type": "string",
-      "required": "10.97.90.55"
+      "required": "localhost"
     },
     {
       "name": "password",
