@@ -62,7 +62,7 @@
                                         "value": "mary had a little lamb",
                                         "required": true,
                                         "type": "string"
-                                    }{
+                                    },{
       "name": "user",
       "type": "string",
       "required": "localhost"
