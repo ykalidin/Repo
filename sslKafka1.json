@@ -71,6 +71,11 @@
       "name": "password",
       "type": "string",
       "required": "test1234"
+    },
+    {
+      "name": "truststore",
+      "type": "string",
+      "required": "/home/apps/Desktop/ssl/trust"
     }
                                 ]
                             }
