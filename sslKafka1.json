@@ -47,7 +47,7 @@
                                 "attributes": [
                                     {
                                         "name": "BrokerUrls",
-                                        "value": "localhost:9093",
+                                        "value": "10.97.91.66:9093",
                                         "required": true,
                                         "type": "string"
                                     },
@@ -63,6 +63,16 @@
                                         "required": true,
                                         "type": "string"
                                     },
+    {
+      "name": "user",
+      "type": "string",
+      "required": "localhost"
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "required": "test1234"
+    },
     {
       "name": "truststore",
       "type": "string",
