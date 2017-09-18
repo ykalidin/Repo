@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "Topic",
-                                        "value": "syslog",
+                                        "value": "mytesttopic",
                                         "required": true,
                                         "type": "string"
                                     },
