@@ -65,7 +65,7 @@
                                     },{
       "name": "user",
       "type": "string",
-      "required": "localhost"
+      "required": "localhost:9093"
     },
     {
       "name": "password",
