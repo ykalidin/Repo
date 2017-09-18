@@ -62,16 +62,7 @@
                                         "value": "mary had a little lamb",
                                         "required": true,
                                         "type": "string"
-                                    },{
-      "name": "user",
-      "type": "string",
-      "required": "localhost"
-    },
-    {
-      "name": "password",
-      "type": "string",
-      "required": "test1234"
-    },
+                                    },
     {
       "name": "truststore",
       "type": "string",
