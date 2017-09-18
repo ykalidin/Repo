@@ -86,7 +86,7 @@
                                     },
                                     {
                                         "name": "Topic",
-                                        "value": "SubscribePet",
+                                        "value": "syslog",
                                         "required": false,
                                         "type": "string"
                                     },
