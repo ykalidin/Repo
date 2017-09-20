@@ -47,7 +47,7 @@
                                 "attributes": [
                                     {
                                         "name": "BrokerUrls",
-                                        "value": "localhost:9093",
+                                        "value": "10.97.91.66:9093",
                                         "required": true,
                                         "type": "string"
                                     },
@@ -67,7 +67,7 @@
     {
       "name": "truststore",
       "type": "string",
-      "required": "/home/apps/Downloads/kafka_2.11-0.11.0.0-1/security/"
+      "required": "C:/Users/ykalidin/Desktop/client.truststore.jks"
     }
                                 ]
                             }
