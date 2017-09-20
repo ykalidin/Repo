@@ -67,7 +67,7 @@
     {
       "name": "truststore",
       "type": "string",
-      "required": "/home/apps/Desktop/key"
+      "required": "/home/Desktop/key"
     }
                                 ]
                             }
