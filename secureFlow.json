@@ -42,7 +42,7 @@
                                 "name": "Invoke REST Service",
                                 "description": "Simple REST Activity",
                                 "type": 1,
-                                "activityType": "github-com-tibco-software-mashling-ext-flogo-activity-rest",
+                                "activityType": "github-com-tibco-software-flogo-contrib-activity-rest",
                                 "activityRef": "github.com/TIBCOSoftware/mashling/ext/flogo/activity/rest",
                                 "attributes": [
                                     {
@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "uri",
-                                        "value": "http://10.97.94.25:8000",
+                                        "value": "https://localhost:8080/",
                                         "required": true,
                                         "type": "string"
                                     },
@@ -101,7 +101,7 @@
                                 "inputMappings": [
                                     {
                                         "type": 1,
-                                        "value": "{T.pathParams}.id",
+                                        "value": "{A2.result}",
                                         "mapTo": "data"
                                     }
                                 ]
