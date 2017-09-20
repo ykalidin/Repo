@@ -67,7 +67,8 @@
     {
       "name": "truststore",
       "type": "string",
-      "required": "C:/Users/ykalidin/Desktop/client"
+        "value": "C:/Users/ykalidin/Desktop/client",
+      "required": false
     }
                                 ]
                             }
