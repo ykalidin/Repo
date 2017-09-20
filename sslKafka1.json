@@ -67,7 +67,7 @@
     {
       "name": "truststore",
       "type": "string",
-      "required": "/home/Desktop/key"
+      "required": "/home/apps/Downloads/kafka_2.11-0.11.0.0-1/security/"
     }
                                 ]
                             }
