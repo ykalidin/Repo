@@ -47,7 +47,7 @@
                                 "attributes": [
                                     {
                                         "name": "BrokerUrls",
-                                        "value": "localhost:9092",
+                                        "value": "localhost:9093",
                                         "required": true,
                                         "type": "string"
                                     },
