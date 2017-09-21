@@ -74,6 +74,12 @@
                                         "value": null,
                                         "required": false,
                                         "type": "any"
+                                    },
+                                    {
+                                        "name": "enableTLS",
+                                        "value": "true",
+                                        "required": false,
+                                        "type": "string"
                                     }
                                 ]
                             },
