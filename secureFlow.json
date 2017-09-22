@@ -74,30 +74,6 @@
                                         "value": null,
                                         "required": false,
                                         "type": "any"
-                                    },
-                                    {
-                                        "name": "enableMutualTLS",
-                                        "value": "true",
-                                        "required": false,
-                                        "type": "boolean"
-                                    },
-                                    {
-                                        "name": "serverCert",
-                                        "value": "/Users/rpolishe/sslcerts/domain.crt",
-                                        "required": false,
-                                        "type": "string"
-                                    },
-                                    {
-                                        "name": "serverKey",
-                                        "value": "/Users/rpolishe/sslcerts/domain.key",
-                                        "required": false,
-                                        "type": "string"
-                                    },
-                                    {
-                                        "name": "trustStore",
-                                        "value": "/Users/rpolishe/truststore",
-                                        "required": false,
-                                        "type": "string"
                                     }
                                 ]
                             },
