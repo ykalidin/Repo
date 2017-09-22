@@ -5,10 +5,11 @@
     "description": "",
     "triggers": [
         {
-            "name": "Receive HTTP Message",
-            "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/rest",
-            "description": "Simple REST Trigger",
+            "name": "gorillamuxtrigger",
+            "ref": "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/gorillamuxtrigger",
+            "description": "gorillamuxtrigger REST Trigger",
             "settings": {
+                "enableTLS": "true",
                 "port": "9096"
             },
             "id": "receive_http_message",
