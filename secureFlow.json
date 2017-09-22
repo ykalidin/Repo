@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "uri",
-                                        "value": "https://localhost:8080/",
+                                        "value": "http://localhost:8080/",
                                         "required": true,
                                         "type": "string"
                                     },
