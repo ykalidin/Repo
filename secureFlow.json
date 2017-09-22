@@ -53,7 +53,7 @@
                                     },
                                     {
                                         "name": "uri",
-                                        "value": "http://localhost:8080/",
+                                        "value": "https://localhost:8080/",
                                         "required": true,
                                         "type": "string"
                                     },
@@ -74,6 +74,18 @@
                                         "value": null,
                                         "required": false,
                                         "type": "any"
+                                    },
+                                    {
+                                        "name": "serverKey",
+                                        "value": null,
+                                        "required": false,
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "trustStore",
+                                        "value": "/Users/rpolishe/truststore",
+                                        "required": false,
+                                        "type": "string"
                                     }
                                 ]
                             },
