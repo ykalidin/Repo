@@ -9,7 +9,7 @@
             "ref": "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/gorillamuxtrigger",
             "description": "gorillamuxtrigger REST Trigger",
             "settings": {
-                "enableTLS": "true",
+                "enableMtlTls": "true",
                 "port": "9096"
             },
             "id": "receive_http_message",
@@ -86,7 +86,7 @@
                                 "inputMappings": [
                                     {
                                         "type": 1,
-                                        "value": "{T.enableTLS}",
+                                        "value": "{T.enableMtlTls}",
                                         "mapTo": "enableMtlTls"
                                     }
                                 ]
