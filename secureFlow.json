@@ -81,6 +81,13 @@
                                         "required": false,
                                         "type": "string"
                                     }
+                                ],
+                                "inputMappings": [
+                                    {
+                                        "type": 1,
+                                        "value": "{T.enableTLS}",
+                                        "mapTo": "enableMtlTls"
+                                    }
                                 ]
                             },
                             {
