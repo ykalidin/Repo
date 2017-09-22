@@ -76,8 +76,14 @@
                                         "type": "any"
                                     },
                                     {
+                                        "name": "serverCert",
+                                        "value": "/Users/rpolishe/sslcerts/domain.crt",
+                                        "required": false,
+                                        "type": "string"
+                                    },
+                                    {
                                         "name": "serverKey",
-                                        "value": null,
+                                        "value": "/Users/rpolishe/sslcerts/domain.key",
                                         "required": false,
                                         "type": "string"
                                     },
