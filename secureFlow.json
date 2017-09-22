@@ -76,7 +76,7 @@
                                         "type": "any"
                                     },
                                     {
-                                        "name": "enableTLS",
+                                        "name": "enableMtlTls",
                                         "value": "true",
                                         "required": false,
                                         "type": "string"
