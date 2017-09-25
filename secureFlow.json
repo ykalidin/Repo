@@ -77,19 +77,19 @@
                                     },
                                     {
                                         "name": "serverCert",
-                                        "value": "/Users/rpolishe/sslcerts/domain.crt",
+                                        "value": "${ENV.SERVER_CERT}",
                                         "required": false,
                                         "type": "string"
                                     },
                                     {
                                         "name": "serverKey",
-                                        "value": "/Users/rpolishe/sslcerts/domain.key",
+                                        "value": "${ENV.SERVER_KEY}",
                                         "required": false,
                                         "type": "string"
                                     },
                                     {
                                         "name": "trustStore",
-                                        "value": "/Users/rpolishe/truststore",
+                                        "value": "${ENV.TRUST_STORE}",
                                         "required": false,
                                         "type": "string"
                                     }
