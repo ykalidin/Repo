@@ -89,7 +89,7 @@
                                     },
                                     {
                                         "name": "trustStore",
-                                        "value": "${ENV.TRUST_STOREwe}",
+                                        "value": "${ENV.TRUST_STORE}",
                                         "required": false,
                                         "type": "string"
                                     }
