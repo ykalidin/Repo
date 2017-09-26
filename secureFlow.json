@@ -89,11 +89,18 @@
                                     },
                                     {
                                         "name": "trustStore",
-                                        "value": "${ENV.TRUST_STORE}",
+                                        "value": null,
                                         "required": false,
                                         "type": "string"
                                     }
-                                ]
+                                ],
+                                "inputMappings":[
+									{
+                                        "type":1,
+                                        "value":"${env.TRUST_STORE}",
+                                        "mapTo":"trustStore"
+                                    }
+								]
                             },
                             {
                                 "id": 3,
