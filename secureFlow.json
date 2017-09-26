@@ -109,7 +109,7 @@
                                         "type":1,
                                         "value":"${env.SERVER_CERT}",
                                         "mapTo":"serverCert"
-                                    },
+                                    }
 				]
                             },
                             {
