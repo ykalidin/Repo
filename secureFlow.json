@@ -77,13 +77,13 @@
                                     },
                                     {
                                         "name": "serverCert",
-                                        "value": "${ENV.SERVER_CERT}",
+                                        "value": null,
                                         "required": false,
                                         "type": "string"
                                     },
                                     {
                                         "name": "serverKey",
-                                        "value": "${ENV.SERVER_KEY}",
+                                        "value": null,
                                         "required": false,
                                         "type": "string"
                                     },
@@ -95,12 +95,22 @@
                                     }
                                 ],
                                 "inputMappings":[
-									{
+				    {
                                         "type":1,
                                         "value":"${env.TRUST_STORE}",
                                         "mapTo":"trustStore"
-                                    }
-								]
+                                    },
+				    {
+                                        "type":1,
+                                        "value":"${env.SERVER_KEY}",
+                                        "mapTo":"serverKey"
+                                    },
+				    {
+                                        "type":1,
+                                        "value":"${env.SERVER_CERT}",
+                                        "mapTo":"serverCert"
+                                    },
+				]
                             },
                             {
                                 "id": 3,
