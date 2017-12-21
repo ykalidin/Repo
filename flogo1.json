@@ -61,7 +61,7 @@
                       "mapTo": "uri"
                     },
                     {
-                      "type": 4,
+                      "type": 1,
                       "value": "$flow.content",
                       "mapTo": "content"
                     }
